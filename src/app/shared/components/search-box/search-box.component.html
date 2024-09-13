@@ -1,4 +1,15 @@
+<div class="relative">
 
-  <input class="px-4 py-2 bg-white border rounded-lg border-aztec-500 focus:outline-aztec-700" type="text"
-    placeholder="{{ placeholder }}">
+  <input
+    class="block px-4 py-1.5 bg-white border rounded-lg ps-11 border-aztec-500 focus:outline-none focus:border-aztec-700 focus:ring-aztec-700"
+    type="text" placeholder="{{ placeholder }}">
 
+  <div class="absolute inset-y-0 z-20 flex items-center pointer-events-none start-0 ps-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 lucide lucide-search size-4">
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.3-4.3" />
+    </svg>
+  </div>
+
+</div>

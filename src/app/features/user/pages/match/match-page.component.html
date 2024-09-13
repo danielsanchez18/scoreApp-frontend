@@ -1,0 +1,55 @@
+<shared-navbar></shared-navbar>
+
+<section class="max-w-[80rem] w-fit mx-auto rounded-lg gap-5 my-4 bg-gray-100 py-2">
+
+  <a routerLink="torneo/1"
+    class="flex items-center gap-2 px-4 py-1 text-xs font-semibold hover:underline underline-offset-4 w-fit">
+
+    <img class="p-0.5 bg-white border rounded-md size-6"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/800px-Bundesliga_logo_%282017%29.svg.png"
+      alt="bundesliga">
+    <p>Bundesliga</p>
+  </a>
+
+  <hr>
+  <div class="grid items-center justify-center grid-cols-3 px-4 py-5 w-fit gap-x-5">
+
+    <div class="flex items-center justify-center w-40">
+      <a routerLink="equipo/1"
+        class="flex flex-col items-center justify-center space-y-2 hover:underline underline-offset-4 w-fit ">
+        <div class="flex items-center justify-center p-2 bg-white border rounded-xl size-24">
+          <img class="h-full" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="">
+        </div>
+        <p class="text-sm font-semibold">Real Madrid</p>
+      </a>
+    </div>
+
+
+    <div class="w-40 space-y-2 font-semibold text-center">
+      <p class="text-sm">12.09.2024 17:07</p>
+      <p class="text-4xl font-black" style="font-family: 'Kode Mono';">
+        <span>2</span> - <span>2</span>
+      </p>
+      <p class="text-sm">FINALIZADO</p>
+    </div>
+
+    <div class="flex items-center justify-center w-40">
+      <a routerLink="equipo/1"
+        class="flex flex-col items-center justify-center space-y-2 hover:underline underline-offset-4 w-fit ">
+        <div class="flex items-center justify-center p-2 bg-white border rounded-xl size-24">
+          <img class="h-full "
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png"
+            alt="">
+        </div>
+        <p class="text-sm font-semibold">Liverpool</p>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<shared-navlink-match></shared-navlink-match>
+
+<div class="max-w-[80rem] w-full mx-auto px-4 mb-20">
+  <router-outlet></router-outlet>
+</div>
