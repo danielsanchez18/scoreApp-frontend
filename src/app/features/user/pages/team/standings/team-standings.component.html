@@ -1,0 +1,40 @@
+
+<style>
+  a {
+    background-color: #e4e4e7;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+
+  a:hover {
+    background-color: #d4d4d8;
+    color: #1f2937;
+  }
+
+  a.active {
+    color: white;
+    background-color: #dc2626;
+    pointer-events: none;
+  }
+</style>
+
+
+<section class="p-4 space-y-4 bg-white rounded-lg">
+
+
+  <nav class="flex items-center text-xs font-medium text-gray-600 uppercase">
+    <div class="flex space-x-2">
+      <a routerLink="tabla" routerLinkActive="active">tabla</a>
+      <a routerLink="goleadores" routerLinkActive="active">goleadores</a>
+      <a routerLink="tarjetas" routerLinkActive="active">tarjetas</a>
+    </div>
+  </nav>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+
+</section>

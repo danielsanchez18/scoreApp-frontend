@@ -1,0 +1,39 @@
+<shared-navbar />
+
+
+<div id="search-modal"
+  class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+  role="dialog" tabindex="-1" aria-labelledby="search-modal">
+  <user-search></user-search>
+</div>
+
+<div id="login-modal"
+  class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+  role="dialog" tabindex="-1" aria-labelledby="login-modal">
+  <user-login></user-login>
+</div>
+
+<div id="signup-modal"
+  class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+  role="dialog" tabindex="-1" aria-labelledby="signup-modal">
+  <user-signup></user-signup>
+</div>
+
+<div id="forgotten-password-modal"
+  class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+  role="dialog" tabindex="-1" aria-labelledby="forgotten-password-modal">
+  <user-forgotten-password></user-forgotten-password>
+</div>
+
+
+<div class="flex max-w-[70rem] w-full mx-auto">
+
+  <div class="my-5 mr-4">
+    <user-nav-tournament />
+  </div>
+
+  <div class="w-full my-8">
+    <router-outlet />
+  </div>
+
+</div>

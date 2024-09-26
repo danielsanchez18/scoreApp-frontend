@@ -1,0 +1,558 @@
+<div class="space-y-4 hs-accordion-group" data-hs-accordion-always-open="">
+
+  <div class="space-y-1 hs-accordion active" id="hs-basic-always-open-heading-one">
+    <!-- header -->
+    <div class="flex items-center justify-between px-4 py-2 text-xs font-medium rounded-md bg-zinc-200 ">
+      <a routerLink="" class="flex items-center gap-x-2 hover:underline underline-offset-2">
+        <div class="flex items-center justify-center rounded-sm p-0.5 size-6 min-w-6 min-h-6">
+          <img class="h-full"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/640px-Bundesliga_logo_%282017%29.svg.png"
+            alt="">
+        </div>
+        <p class="text-gray-800">Bundesliga</p>
+      </a>
+
+      <div class="flex items-center gap-x-4 ">
+        <a href="" class="text-gray-800 hover:underline underline-offset-2">Clasificación</a>
+
+        <button class="inline-flex p-1 rounded-full hs-accordion-toggle hs-accordion-active:bg-white hover:bg-white"
+          aria-expanded="true" aria-controls="hs-basic-always-open-collapse-one">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-up hs-accordion-active:hidden block size-3.5">
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-down hs-accordion-active:block hidden size-3.5">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="hs-accordion-content overflow-hidden transition-[height] duration-200"
+      id="hs-basic-always-open-collapse-one" role="region" aria-labelledby="hs-basic-always-open-heading-one">
+
+      <a routerLink="/juego/1" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">18:45</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">1'</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-semibold text-gray-800">
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <p
+              class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">
+              Preview</p>
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="/juego/1" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">Finalizado</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">Descanso</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-medium text-gray-800">
+              <p>1</p>
+              <p>1</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <div class="flex justify-center w-16">
+              <!-- <p class="p-1 px-2 text-[10px] w-full text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+              <!-- <p class="p-1 px-2 text-[10px] w-full text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+            </div>
+
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="/juego/1" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">Finalizado</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">1'</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full font-bold">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-medium text-gray-800">
+              <p>2</p>
+              <p class="font-bold">4</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="/juego/1" class="flex w-full bg-red-100 border-b hover:bg-gray-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-bold text-center  flex w-[100px]">
+            <!-- hour -->
+            <!-- <p class="w-full">18:45</p> -->
+
+            <!-- time -->
+            <p class="w-full text-red-600">1'</p>
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <div class="flex items-center w-full font-bold text-red-600 gap-x-5">
+              <p>Barcelona</p>
+
+              <div class="flex items-center gap-x-3">
+                <!-- <div class="w-[8px] h-3 font-medium text-center text-white bg-red-600 rounded-sm flex items-center justify-center text-[8px]"></div> -->
+                <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">GOL</p>
+                <!-- <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">GRAN OCASIÓN</p> -->
+                <!-- <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">VAR</p> -->
+              </div>
+
+            </div>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-bold text-red-600">
+              <p>0</p>
+              <p>1</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+            <p
+              class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">
+              EN VIVO</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hidden space-y-1 hs-accordion" id="hs-basic-always-open-heading-two">
+
+    <!-- header -->
+    <div class="flex items-center justify-between px-4 py-2 text-xs font-medium rounded-md bg-zinc-200">
+      <a routerLink="" class="flex items-center gap-x-2 hover:underline underline-offset-2">
+        <div class="flex items-center justify-center rounded-sm p-0.5 size-6 min-w-6 min-h-6">
+          <img class="h-full"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/640px-Bundesliga_logo_%282017%29.svg.png"
+            alt="">
+        </div>
+        <p>Bundesliga</p>
+      </a>
+
+      <div class="flex items-center gap-x-4 ">
+        <a href="" class="hover:underline underline-offset-2">Clasificación</a>
+
+        <button class="inline-flex p-1 rounded-full hs-accordion-toggle hs-accordion-active:bg-white hover:bg-white"
+          aria-expanded="true" aria-controls="hs-basic-always-open-collapse-two">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-up hs-accordion-active:hidden block size-3.5">
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-chevron-down hs-accordion-active:block hidden size-3.5">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+
+        </button>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="hs-accordion-content overflow-hidden transition-[height] duration-200"
+      id="hs-basic-always-open-collapse-two" role="region" aria-labelledby="hs-basic-always-open-heading-two">
+
+      <a routerLink="" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">18:45</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">1'</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-semibold text-gray-800">
+              <p>-</p>
+              <p>-</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <p
+              class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">
+              Preview</p>
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">Finalizado</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">Descanso</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full overflow-hidden text-ellipsis whitespace-nowrap">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-medium text-gray-800">
+              <p>1</p>
+              <p>1</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <div class="flex justify-center w-16">
+              <!-- <p class="p-1 px-2 text-[10px] w-full text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+              <!-- <p class="p-1 px-2 text-[10px] w-full text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+            </div>
+
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="" class="flex w-full border-b hover:bg-zinc-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-medium text-center  flex w-[100px]">
+            <!-- hour -->
+            <p class="w-full">Finalizado</p>
+
+            <!-- time -->
+            <!-- <p class="w-full font-bold text-red-600">1'</p> -->
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <p class="w-full font-bold">Barcelona</p>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-medium text-gray-800">
+              <p>2</p>
+              <p class="font-bold">4</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">EN VIVO</p> -->
+          </div>
+
+        </div>
+      </a>
+
+      <a routerLink="" class="flex w-full bg-red-100 border-b hover:bg-gray-100">
+
+        <div
+          class="grid grid-cols-[1fr_3fr_auto_1fr_1fr] w-full items-center gap-x-5 px-4 py-2 text-xs text-gray-800">
+
+          <div class="font-bold text-center  flex w-[100px]">
+            <!-- hour -->
+            <!-- <p class="w-full">18:45</p> -->
+
+            <!-- time -->
+            <p class="w-full text-red-600">1'</p>
+          </div>
+
+
+          <!-- teams -->
+          <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 items-center font-medium w-full">
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4 w-fit">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png"
+                alt="">
+            </div>
+            <p class="w-full">Arsenal</p>
+
+            <div class="flex items-center justify-center rounded-sm size-4 min-w-4 min-h-4">
+              <img class="h-full"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+                alt="">
+            </div>
+            <div class="flex items-center w-full font-bold text-red-600 gap-x-5">
+              <p>Barcelona</p>
+
+              <div class="flex items-center gap-x-3">
+                <!-- <div class="w-[8px] h-3 font-medium text-center text-white bg-red-600 rounded-sm flex items-center justify-center text-[8px]"></div> -->
+                <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">GOL</p>
+                <!-- <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">GRAN OCASIÓN</p> -->
+                <!-- <p class="text-[8px] leading-[14px] px-1 rounded border border-red-600">VAR</p> -->
+              </div>
+
+            </div>
+          </div>
+
+          <!-- event -->
+          <div class="w-[40px] h-full flex">
+            <!-- <div class="flex items-start justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+            <!-- <div class="flex items-end justify-center w-full h-full font-bold text-red-600">GOL</div> -->
+          </div>
+
+          <!-- score -->
+          <div class="flex h-full w-[20px]">
+            <div class="flex flex-col items-center justify-around h-full font-bold text-red-600">
+              <p>0</p>
+              <p>1</p>
+            </div>
+          </div>
+
+          <!-- preview -->
+          <div class="flex items-center justify-end w-full">
+            <!-- <p class="p-1 px-2 text-[10px] w-16 text-center bg-white font-medium text-gray-500 uppercase border border-gray-300 rounded-md">Preview</p> -->
+            <p
+              class="p-1 px-2 text-[10px] w-16 text-white text-center font-medium bg-red-600 border border-red-600 rounded-md">
+              EN VIVO</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hs-accordion" id="hs-basic-always-open-heading-three">
+
+  </div>
+
+</div>

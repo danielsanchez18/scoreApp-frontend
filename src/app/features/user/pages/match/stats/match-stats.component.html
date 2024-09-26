@@ -1,0 +1,35 @@
+<style>
+  a {
+    background-color: #e4e4e7;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+
+  a:hover {
+    background-color: #d4d4d8;
+    color: #1f2937;
+  }
+
+  a.active {
+    color: white;
+    background-color: #dc2626;
+    pointer-events: none;
+  }
+</style>
+
+<section class="p-4 bg-white rounded-lg">
+
+  <div class="flex items-center text-xs font-medium text-gray-600 uppercase gap-x-2">
+      <a routerLink="../estadisticas" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">partido</a>
+      <a routerLink="1" routerLinkActive="active">1° tiempo</a>
+      <a routerLink="2" routerLinkActive="active">2° tiempo</a>
+      <a routerLink="3" routerLinkActive="active">prórroga</a>
+  </div>
+
+  <div class="w-full my-5">
+    <router-outlet />
+  </div>
+
+</section>

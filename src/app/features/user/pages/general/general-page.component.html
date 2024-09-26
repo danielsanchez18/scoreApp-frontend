@@ -1,0 +1,63 @@
+<style>
+  a {
+    background-color: #e4e4e7;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+
+  a:hover {
+    background-color: #d4d4d8;
+    color: #1f2937;
+  }
+
+  a.active {
+    color: white;
+    background-color: #dc2626;
+    pointer-events: none;
+  }
+</style>
+
+
+<div class="h-screen bg-white rounded-lg">
+
+  <nav class="flex items-center justify-between p-4 text-xs font-medium text-gray-600 uppercase">
+    <div class="space-x-2">
+      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}" >todos</a>
+      <a routerLink="live" routerLinkActive="active">en directo</a>
+      <a href="">finalizados</a>
+      <a href="">próximos</a>
+    </div>
+
+    <div class="flex items-center gap-x-1">
+      <button class="p-1.5 bg-white border border-gray-200 rounded-md hover:bg-gray-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-chevron-left size-4">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+      </button>
+
+      <button class="p-1.5 px-5 text-gray-800 bg-white border border-gray-200 rounded-md hover:bg-gray-100">
+        <div class="flex items-center gap-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-3"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+          <p>VIE 20/09</p>
+        </div>
+      </button>
+
+      <button class="p-1.5 bg-white border border-gray-200 rounded-md hover:bg-gray-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-chevron-right size-4">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mx-4">
+    <router-outlet />
+  </div>
+
+</div>

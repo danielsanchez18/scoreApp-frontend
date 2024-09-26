@@ -1,0 +1,80 @@
+<style>
+  a {
+    display: flex;
+    padding: 16px 0px 10px 0px;
+    border-color: transparent;
+    color: #6b7280;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    color: #1f2937;
+  }
+
+  .active {
+    color: #dc2626;
+    border-color: #dc2626;
+    pointer-events: none;
+  }
+</style>
+
+
+<div class="space-y-2">
+
+  <section class="flex items-center justify-between p-4 bg-white rounded-lg">
+
+    <article class="grid grid-cols-[auto_auto] grid-rows-[auto_auto] gap-x-5 w-fit items-center">
+
+      <!-- logo -->
+      <div class="row-span-2 p-1 bg-white border rounded border-zinc-200 size-16 ">
+        <img class="h-full"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png"
+          alt="">
+      </div>
+
+      <!-- equipo -->
+      <div class="flex items-center gap-x-3">
+        <p class="text-lg font-bold">Barcelona</p>
+
+        <!-- <button class="hover:bg-slate-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 lucide size-5 lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </button> -->
+
+      </div>
+
+      <!-- entrenador -->
+      <p class="text-xs font-semibold text-gray-500">Entrenador: Hansi Flick (54)</p>
+
+    </article>
+
+  </section>
+
+
+  <section class="px-4 text-sm bg-white rounded-lg">
+
+    <div class="flex items-center h-full text-xs font-semibold uppercase gap-x-10">
+
+      <a routerLink="/equipo/1" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+        class="border-b-[3px]">RESUMEN</a>
+
+      <a routerLink="resultados" routerLinkActive="active"
+        class="border-b-[3px]">RESULTADOS</a>
+
+      <a routerLink="enfrentamientos" routerLinkActive="active"
+        class="border-b-[3px]">PARTIDOS</a>
+
+      <a routerLink="clasificacion" routerLinkActive="active"
+        class="border-b-[3px]">CLASIFICACIÓN</a>
+
+        <a routerLink="plantilla" routerLinkActive="active"
+        class="border-b-[3px]">plantilla</a>
+
+    </div>
+  </section>
+
+
+  <section>
+    <router-outlet />
+  </section>
+
+</div>

@@ -1,0 +1,161 @@
+<div
+  class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
+  <div class="flex flex-col w-full py-3 bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 pb-3 border-b">
+      <h3 id="search-modal-label" class="font-bold text-black">
+        Búsqueda
+      </h3>
+      <button type="button"
+        class="inline-flex items-center justify-center text-gray-800 bg-gray-100 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
+        aria-label="Close" data-hs-overlay="#search-modal">
+        <span class="sr-only">Close</span>
+        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="px-10 py-4 space-y-4 overflow-y-auto min-h-96 max-h-[30rem]">
+
+      <!-- Search input -->
+      <div class="relative">
+        <input
+          class="block w-full px-4 py-2 text-xs font-medium bg-white border rounded-lg ps-11 border-zinc-500 focus:outline-none focus:border-zinc-900 focus:ring-zinc-900"
+          type="text" placeholder="Introduzca su búsqueda aquí">
+
+        <div class="absolute inset-y-0 z-20 flex items-center pointer-events-none start-0 ps-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-gray-400 lucide lucide-search size-4">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Search results -->
+      <div class="flex flex-col space-y-4 min-h-96">
+
+        <p class="text-xs font-medium text-gray-500">Por favor, introduzca al menos 2 caracteres. Los resultados se
+          mostrarán aquí inmediatamente.</p>
+
+        <div class="space-y-4">
+          <p class="text-xs font-semibold text-gray-500">SUS ÚLTIMAS BÚSQUEDAS</p>
+
+          <div>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+          </div>
+
+          <p class="text-xs font-semibold text-gray-500">BÚSQUEDAS MÁS FRECUENTES</p>
+
+          <div>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+            <a routerLink="" class="flex items-center p-2 border-b gap-x-3 hover:bg-zinc-200">
+              <div class="bg-white border rounded-md size-8">
+                <img class="h-full"
+                  src="https://as01.epimg.net/img/comunes/fotos/fichas/deportistas/m/mes/large/15167.png" alt="">
+              </div>
+              <div class="text-xs">
+                <p class="font-bold">Champions League</p>
+                <p class="text-gray-500 text-[10px]">TORNEO</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<nav class="bg-daintre-950 ">
+
+  <div class="w-full max-w-[70rem] mx-auto h-[5.5rem] max-lg:px-4 flex items-center justify-between">
+
+    <a routerLink="/" class="w-[200px]">
+      <img src="img/logo.svg" alt="">
+    </a>
+
+    <div class="flex gap-x-2">
+
+      <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="search-modal" data-hs-overlay="#search-modal"
+        class="p-2.5 rounded-lg bg-daintre-900 text-secondary hover:bg-background">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-search size-4">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+      </button>
+
+      <a routerLink="favoritos"
+        class="p-2.5 rounded-lg bg-daintre-900 text-secondary hover:bg-background">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-star size-4">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+        </svg>
+      </a>
+
+      <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="login-modal" data-hs-overlay="#login-modal"
+        class="p-2.5 flex items-center gap-x-2 rounded-lg bg-daintre-900 text-secondary hover:bg-background text-xs font-medium uppercase">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-user-round size-4">
+          <circle cx="12" cy="8" r="5" />
+          <path d="M20 21a8 8 0 0 0-16 0" />
+        </svg>
+        <p>Conectar</p>
+      </button>
+
+    </div>
+
+  </div>
+
+</nav>
