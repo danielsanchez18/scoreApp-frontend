@@ -73,7 +73,12 @@ import { UserFavoritePageComponent } from './pages/favorite/favorite-page.compon
     SharedModule
   ],
   exports: [
-    UserSearchComponent
+    UserSearchComponent,
+    UserLoginComponent,
+    UserSignupComponent,
+    UserForgottenPasswordComponent,
+    UserNavTournamentComponent
   ]
+
 })
 export class UserModule { }

@@ -11,6 +11,9 @@ import { TableSquadComponent } from './components/table/squad/table-squad.compon
 import { TableStatsComponent } from './components/table/stats/table-stats.component';
 import { TableLineupsComponent } from './components/table/lineups/table-lineups.component';
 import { TableH2hComponent } from './components/table/h2h/table-h2h.component';
+import { TableRequestsComponent } from './components/table/requests/table-requests.component';
+import { ButtonPrimaryComponent } from './components/button/button-primary.component';
+import { ButtonSecondaryComponent } from './components/button/button-secondary.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import { TableH2hComponent } from './components/table/h2h/table-h2h.component';
     TableStatsComponent,
     TableLineupsComponent,
     TableH2hComponent,
+    TableRequestsComponent,
+    ButtonPrimaryComponent,
+    ButtonSecondaryComponent,
   ],
   imports: [
     CommonModule,
@@ -40,7 +46,10 @@ import { TableH2hComponent } from './components/table/h2h/table-h2h.component';
     TableSquadComponent,
     TableLineupsComponent,
     TableH2hComponent,
+    TableRequestsComponent,
     TableStatsComponent,
+    ButtonPrimaryComponent,
+    ButtonSecondaryComponent,
   ]
 })
 export class SharedModule { }

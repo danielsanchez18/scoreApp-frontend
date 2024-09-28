@@ -1,0 +1,85 @@
+<div class="flex flex-col">
+  <div class="-m-1.5 overflow-x-auto">
+    <div class="p-1.5 min-w-full inline-block align-middle">
+      <div class="overflow-hidden">
+        <table class="min-w-full divide-y-8 divide-white">
+          <thead class="">
+            <tr>
+              <th scope="col" colspan="5"
+                class="px-4 py-1.5 text-xs font-semibold text-gray-800 uppercase rounded-md text-start bg-zinc-200">
+                <div class="flex items-center justify-between">
+                  {{title}}
+                  <span>
+                    2 nuevos
+                  </span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+
+            <tr routerLink="/solicitudes/1"
+              class="px-4 py-2 text-xs font-medium cursor-pointer text-800 hover:bg-zinc-100">
+              <td class="px-4 py-2 whitespace-nowrap">TORNEO</td>
+              <td class="px-4 py-2 whitespace-nowrap">Bundesliga</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nombre del patrocinador</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nuevo</td>
+              <td class="px-4 py-2 text-gray-500 whitespace-nowrap text-end">
+                Hace 25min
+              </td>
+            </tr>
+
+
+            <tr routerLink="/solicitudes/1"
+              class="px-4 py-2 text-xs font-medium cursor-pointer text-800 hover:bg-zinc-100">
+              <td class="px-4 py-2 whitespace-nowrap">PARTIDO</td>
+              <td class="px-4 py-2 whitespace-nowrap">Amistoso</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nombre del patrocinador</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nuevo</td>
+              <td class="px-4 py-2 text-gray-500 whitespace-nowrap text-end">
+                Hace 25min
+              </td>
+            </tr>
+
+            @if(revised) {
+            <tr routerLink="/solicitudes/1"
+              class="px-4 py-2 text-xs font-medium cursor-pointer text-800 hover:bg-zinc-100"
+              [ngClass]="{'bg-zinc-200': revised}">
+              <td class="px-4 py-2 whitespace-nowrap">EQUIPO</td>
+              <td class="px-4 py-2 whitespace-nowrap">Arsenal</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nombre del patrocinador</td>
+              <td class="px-4 py-2 whitespace-nowrap">Visto</td>
+              <td class="px-4 py-2 text-gray-500 whitespace-nowrap text-end">
+                Hace 25min
+              </td>
+            </tr>
+            }
+
+            <tr routerLink="/solicitudes/1"
+              class="px-4 py-2 text-xs font-medium cursor-pointer text-800 hover:bg-zinc-100">
+              <td class="px-4 py-2 whitespace-nowrap">EQUIPO</td>
+              <td class="px-4 py-2 whitespace-nowrap">Arsenal</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nombre del patrocinador</td>
+              <td class="px-4 py-2 whitespace-nowrap">Visto</td>
+              <td class="px-4 py-2 text-gray-500 whitespace-nowrap text-end">
+                Hace 25 días
+              </td>
+            </tr>
+
+            <tr routerLink="/solicitudes/1"
+              class="px-4 py-2 text-xs font-medium cursor-pointer text-800 hover:bg-zinc-100">
+              <td class="px-4 py-2 whitespace-nowrap">EQUIPO</td>
+              <td class="px-4 py-2 whitespace-nowrap">Arsenal</td>
+              <td class="px-4 py-2 whitespace-nowrap">Nombre del patrocinador</td>
+              <td class="px-4 py-2 whitespace-nowrap">Visto</td>
+              <td class="px-4 py-2 text-gray-500 whitespace-nowrap text-end">
+                11-02-2024
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
